@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      background:burlywood;
+      border-style: solid;
+      border-width: 5px;
+      padding: 15px;
+
+    }
+
+    h2{
+      color: blueviolet;
+    }
+    p{
+      color:black;
+    }
+  .one {
+    border: 5px solid red;
+  }
+  .two {
+    border: 5px solid red;
+  }
+  .three{
+    border: 5px solid red;
+  }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+    <body>
+      <h2 style="text-align: center; color:brown; border:bottom 2px;"> Media Queries</h2>
+      <div class="one">
+        <h2>
+       Q1. Define media queries in the context of responsive web design.
+         How do media queries allow for targeted styling based on device characteristics?
+    </h2>
+    <p> Ans- Media queries are a key component of responsive web design.They allow developers to apply specific
+    CSS rule based on the characteristics of the device or viewport size.
+    In responsive web design, different devices have varying screen sizes, resolution,and capabilities .Media queries
+    enable web designers and developers to create flexible layout that adapt and respond to different devices, ensuring optimal user experience
+    across multiple devices.</p>
+    <p> Media queries use a set of Css rules that define when certain styles should be applied based on device characteristics
+        such as screen size,viewport width,and even specific features like screen resolution or device aspect
+        ratio. by using media queries, developers can create different set of CSS rules that are applied
+        selectively to different devices or screen sizes. This targeted styling allows for a more
+        tailored user experience.
+        for example, developers can define specific style for mobile devices with smaller screens,
+        such as adjusting font sizes, hiding or rearranging elements, or modifying the layout to be more suitable for smaller screens.
+    </p>
+  
+    </div>
+    <div class="two">
+    <h2>
+      
+       Q2.Describe the syntax of a basic media query rule in CSS. Provide an example of a media query that targets screens with a maximum width of 768px.
+
+    </h2>
+    <p> Ans- A media query consist of a media type that can contain one or more expression which can be either true or false. The result of the query is true if the specified media matches the type of device the document is displayed on. If the media query is true then a style sheet is applied.
+     <h3>syntax:</h3>
+     <pre>
+     @media not | only mediatype and (expression) {
+        // Code content
+    }
+    
+    <h3>example:</h3>
+    <p>    Css
+        @media screen and (max-width:768px){
+            body{
+                font-size: 16px;
+            }
+            .container{
+                padding: 10px;
+            }
+        }</p>
+        </pre>
+      </div>
+      <div class="three">
+        <h2>Q3.Explain how media queries can be used to create a responsive design for a webpage. Provide examples of how different styles can be applied at various screen sizes.
+            </h2>
+    
+            <p> Ans- Media queries can be used to create a responsive design for a webpage by applying CSS style based on the characteristics of the device or viewport size. This allows the webpage to adapt and provide an optimal viewing experience for different screen sizes and devices.
+                For example, let's say we have a webpage with a header, navigation menu, and a main content section. Here's how media queries can be used to create a responsive 
+                design for this webpage: 
+<pre>
+              Default Styles:
+                ''' css
+                  header {
+                   height: 100px;
+                  }
+                  nav {
+                   width: 200px;
+                  }
+                  .content {
+                    width: 800px;
+                  }
+                  '''
+                  <h3> 1. Media Query for Medium Screens (min-width: 601px) and (max-width: 1024px):</h3>
+                  css
+                  @media screen and (min-width: 601px) and (max-width: 1024px) {
+                    header {
+                      height: 120px;
+                    }
+                    nav {
+                      width: 300px;
+                    }
+                  }
+                  <h3> 2. Media Query for Large Screens (min-width: 1025px):</h3>
+                  css
+                  @media screen and (min-width: 1025px) {
+                    header {
+                      height: 150px;
+                    }
+                    nav {
+                      float: left;
+                      width: 200px;
+                    }
+                    .content {
+                      margin-left: 220px;
+                    }
+                  }
+                </pre>
+            </p>
+            </div>
+
+        </body>
+    
+
+</html>
